@@ -4,17 +4,15 @@ This is my own vscode configuration, share it to this repository for backup.
 
 ## Plug-in
 
-- Bracket Pair Colorizer
+- Dracula Official
 
-- C/C++
+- vscode-icons
+
+- Bracket Pair Colorizer
 
 - Code Runner
 
 - Color Info
-
-- Debugger for Java
-
-- Dracula Official
 
 - HTML CSS Support
 
@@ -26,15 +24,21 @@ This is my own vscode configuration, share it to this repository for backup.
 
 - jQuery Code Snippets
 
+- Python
+
+- C/C++
+
 - Language Support for Java(TM) by Red Hat
+
+- Debugger for Java
+
+- Better Align
 
 - LaTeX Workshop
 
 - Markdown All in One
 
 - Path Intellisense
-
-- Python
 
 - Regex Previewer
 
@@ -44,5 +48,5 @@ This is my own vscode configuration, share it to this repository for backup.
 
 - Visual Studio IntelliCode
 
-- vscode-icons
+    
 

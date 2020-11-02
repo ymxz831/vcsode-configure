@@ -11,6 +11,8 @@
     {
         "source.fixAll": true,
     },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
     // 放大
     "window.zoomLevel": 0,
