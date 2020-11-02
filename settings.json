@@ -21,7 +21,7 @@
     "editor.fontLigatures": false,
 
 /*
- *  路径补全插件 Path Intellisense
+ *  Path Intellisense
  */
 
     // 关闭原有自动补全
