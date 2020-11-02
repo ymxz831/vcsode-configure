@@ -1,0 +1,240 @@
+{
+/*
+ *  编辑器
+ */    
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 19,
+    "workbench.startupEditor": "welcomePage",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.codeActionsOnSave": 
+    {
+        "source.fixAll": true,
+    },
+
+    // 放大
+    "window.zoomLevel": 0,
+
+    // 连体
+    "editor.fontLigatures": false,
+
+/*
+ *  路径补全插件 Path Intellisense
+ */
+
+    // 关闭原有自动补全
+    "typescript.suggest.paths": false,
+
+    // 导入本地包显示文件扩展名
+    "path-intellisense.extensionOnImport": true,
+
+    // 显示隐藏文件
+    "path-intellisense.showHiddenFiles": true,
+
+    // 目录后面自动斜杠
+    "path-intellisense.autoSlashAfterDirectory": true,
+
+    // 绝对路径设置为当前工作目录的绝对路径
+    "path-intellisense.absolutePathToWorkspace": true,
+    "todo-tree.tree.showScanModeButton": false,
+
+/*
+ *  TOOD tree
+ */
+
+    "todo-tree.highlights.customHighlight": 
+    {
+        "TODO": 
+        {
+            "icon": "check",
+            "iconColour": "blue",
+            "type": "text",
+            "background": "#00f2ff",
+            "foreground": "blue",
+            "gutterIcon": true,
+            "opacity": 80,
+        },
+        "FIXME":
+        {
+            "iconColour": "yellow",
+            "type": "line",
+            "background": "#00ffda",
+            "foreground": "yellow",
+            "gutterIcon": true,
+            "opacity": 80,
+        }
+    },
+
+/*
+ *  LaTex Workshop
+ */ 
+
+    //右键菜单
+    "latex-workshop.showContextMenu":true,        
+
+    //根据加载的包，自动完成命令或包
+    "latex-workshop.intellisense.package.enabled": true, 
+
+    //禁止保存文件时自动build
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.recipes": 
+    [ 
+        { 
+            "name": "latexmk", 
+            "tools": 
+            [ 
+                "latexmk" 
+            ] 
+        }, 
+        { 
+            "name": "PDFlatex", 
+            "tools": 
+            [ 
+                "pdflatex" 
+            ] 
+        }, 
+        { 
+            "name": "pdflatex ->žž bibtex ->žž pdflatex2", 
+            "tools": 
+            [ 
+                "pdflatex", 
+                "bibtex", 
+                "pdflatex", 
+                "pdflatex" 
+            ] 
+        }, 
+        { 
+            "name": "xelatex", 
+            "tools": 
+            [ 
+                "xelatex" 
+            ] 
+        }, 
+        { 
+            "name": "xelatex -> bibtex -> xelatex", 
+            "tools": 
+            [ 
+                "xelatex", 
+                "bibtex", 
+                "xelatex", 
+            ] 
+        } 
+    ], 
+    "latex-workshop.latex.tools":
+    [ 
+        { 
+            "name": "latexmk", 
+            "command": "latexmk", 
+            "args": 
+            [ 
+                "-synctex=1", 
+                "-interaction=nonstopmode", 
+                "-file-line-error", 
+                "-pdf", 
+                "-outdir=%OUTDIR%", 
+                "%DOC%" 
+            ], 
+            "env": {} 
+        }, 
+        { 
+            "name": "pdflatex", 
+            "command": "pdflatex", 
+            "args": 
+            [ 
+                "-synctex=1", 
+                "-interaction=nonstopmode", 
+                "-file-line-error", 
+                "%DOC%" 
+            ], 
+            "env": {} 
+        }, 
+        { 
+            "name": "xelatex", 
+            "command": "xelatex", 
+            "args": 
+            [ 
+                "-synctex=1", 
+                "-interaction=nonstopmode", 
+                "-file-line-error", 
+                "%DOC%" 
+            ], 
+            "env": {} 
+        }, 
+        { 
+            "name": "bibtex", 
+            "command": "bibtex", 
+            "args": 
+            [ 
+                "%DOCFILE%" 
+            ], 
+            "env": {} 
+        } 
+    ], 
+
+    //设定清理文件的类型 
+    "latex-workshop.latex.clean.fileTypes": 
+    [ 
+        "*.aux", 
+        "*.bbl", 
+        "*.blg", 
+        "*.idx", 
+        "*.ind", 
+        "*.lof", 
+        "*.lot", 
+        "*.out", 
+        "*.toc", 
+        "*.acn", 
+        "*.acr", 
+        "*.alg", 
+        "*.glg", 
+        "*.glo", 
+        "*.gls", 
+        "*.ist", 
+        "*.fls", 
+        "*.log", 
+        "*.fdb_latexmk", 
+        "*.nav", 
+        "*.snm", 
+        "*.synctex.gz" 
+    ], 
+
+    //pdf文件的预览方式
+    "latex-workshop.view.pdf.viewer":"tab",
+
+/*
+ *  Indent-Ranibow
+ */
+
+    // 忽略正则表达式错误显示
+    "indentRainbow.ignoreLinePatterns" : 
+    [
+        "/[ \t]* [*]/g",
+        "/[ \t]+[/]{2}/g"
+    ],
+
+    // 忽略 markdown 错误提示
+    "indentRainbow.ignoreErrorLanguages" : 
+    [
+        "markdown",
+        "haskell"
+    ],
+
+/*
+ *  SVG Viewer
+ */
+
+    // 显示透明网格
+    "svgviewer.transparencygrid": true,
+
+    // 自动打开预览
+    "svgviewer.enableautopreview": true,
+    
+    // 右侧预览
+    "svgviewer.previewcolumn": "Beside",
+        
+    // 透明颜色
+    "svgviewer.transparencycolor": "#2BD163",
+    
+    // 显示放大缩小按钮
+    "svgviewer.showzoominout": true,
+}
